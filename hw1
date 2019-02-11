@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<style>
+#change {
+	font-family: "Lucida Console"
+}
+
+</style>
+
+<title>INFO 638 Homework 1</title>
+
+</head>
+
+<body>
+
+<h2>Homework 1</h2>
+<h3>Em Ordway</h3>
+<h3>2/13/19</h3>
+
+
+<?php
+
+
+$change= 1015; 
+$dollars = ((int)($change / 100)); 
+$quarters = (int)(($change - $dollars * 100) / 25);
+$dimes = (int)(($change - ($dollars * 100) - ($quarters * 25))/ 10);
+$nickles = (int)(($change - ($dollars * 100) - ($quarters * 25) - ($dimes * 10))/5); 
+$pennies = $change - ($dollars * 100) - ($quarters * 25) - ($dimes * 10) - ($nickles * 5);
+
+echo "<p id = change>Your change is" . " " . $dollars . " dollar(s)," . " " . $quarters . " quarter(s)," . " " . $dimes . " dime(s)," . " " . $nickles . " nickle(s), and" . " " . $pennies . " cents.</p>"; 
+
+?>
+
+<h3>Beer Count</h3>  
+
+<?php
+
+
+
+
+for ($beercount = 99; $beercount <= 99; --$beercount) 
+{
+	$beerdrink = $beercount - 1;
+	echo $beercount .  " bottles of beer on the wall, " . $beercount .  " bottles of beer.<br> Take one down, pass it around, " . $beerdrink . " bottles of beer on the 
+wall! <br>"; }
+	#if ($beercount == 2){
+		#echo "$beercount .  " bottles of beer on the wall, " . $beercount .  " bottles of beer.<br> Take one down, pass it around, " . $beerdrink . " bottle of beer on the wall! <br>"; 
+	#if ($beercount ==
+	
+
+	
+}
+
+?>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>
+
+
+
