@@ -43,18 +43,21 @@ echo "<p id = change>Your change is" . " " . $dollars . " dollar(s)," . " " . $q
 
 
 
-for ($beercount = 99; $beercount <= 99; --$beercount) 
+for ($beercount = 99; $beercount >0;  --$beercount)
 {
-	$beerdrink = $beercount - 1;
-	echo $beercount .  " bottles of beer on the wall, " . $beercount .  " bottles of beer.<br> Take one down, pass it around, " . $beerdrink . " bottles of beer on the 
-wall! <br>"; }
-	#if ($beercount == 2){
-		#echo "$beercount .  " bottles of beer on the wall, " . $beercount .  " bottles of beer.<br> Take one down, pass it around, " . $beerdrink . " bottle of beer on the wall! <br>"; 
-	#if ($beercount ==
-	
-
-	
-}
+    $beerdrink = $beercount - 1;
+    
+    if ($beercount == 1) {
+        echo $beercount .  " bottle of beer on the wall, " . $beercount .  " bottle of beer!<br> Take one down, pass it around, " . $beerdrink . " bottles of beer on the wall! <br>";
+    }
+    if ($beercount == 2) {
+        echo $beercount .  " bottles of beer on the wall, " . $beercount .  " bottles of beer!<br> Take one down, pass it around, " . $beerdrink . " bottle of beer on the wall! <br>";
+    }
+    else if {
+    echo $beercount .  " bottles of beer on the wall, " . $beercount .  " bottles of beer!<br> Take one down, pass it around, " . $beerdrink . " bottles of beer on the wall! <br>";
+    }
+    
+    }
 
 ?>
 
