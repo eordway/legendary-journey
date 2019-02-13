@@ -7,6 +7,8 @@
 <style>
 #change {
 	font-family: "Lucida Console"
+	text-align: center; 
+	border: 3px solid black; 
 }
 
 </style>
@@ -53,7 +55,7 @@ for ($beercount = 99; $beercount >0;  --$beercount)
     if ($beercount == 2) {
         echo $beercount .  " bottles of beer on the wall, " . $beercount .  " bottles of beer!<br> Take one down, pass it around, " . $beerdrink . " bottle of beer on the wall! <br>";
     }
-    else if {
+    else {
     echo $beercount .  " bottles of beer on the wall, " . $beercount .  " bottles of beer!<br> Take one down, pass it around, " . $beerdrink . " bottles of beer on the wall! <br>";
     }
     
