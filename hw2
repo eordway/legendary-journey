@@ -25,7 +25,8 @@
 function isbn($a, $b, $c, $d, $e, $f, $g, $h, $i, $j){
 	$isbn_sum = ($a *10) + ($b * 9) + ($c * 8) + ($d * 7) + ($e * 6) + ($f * 5) + ($g * 4) + ($h * 3) + ($i * 2) + ($j *1); 
 	$result = ($isbn_sum / 11);
-	echo "$result<br>";
+	echo "Checking ISBN: $a$b$c$d$e$f$g$h$i$j<br>";
+	//echo "$result<br>";
 	if (is_int ($result)){
 		echo "This is a valid ISBN.";
 	}
@@ -36,6 +37,7 @@ function isbn($a, $b, $c, $d, $e, $f, $g, $h, $i, $j){
 	
 	
 	const X = 10;//not sure if this is right but it seems to work
+	
 	echo isbn(1, 5, 6, 8, 8, 1, 1, 1, 1, X). "<br>";//easier way to input?
 
 ?> 
