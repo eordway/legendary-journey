@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<head>
+<style type= "text/css" media = "screen">
+
+
+}
+ 
+</style>
+
+<title> Homework 2</title>
+
+</head>
+
+<body>
+
+<h3>Homework 2</h3>
+<h4>2/20/19</h4>
+<h4> Em Ordway</h4>
+
+<p>
+<h3>ISBN Excercise</h3>
+<?php
+
+function isbn($a, $b, $c, $d, $e, $f, $g, $h, $i, $j){
+	$isbn_sum = ($a *10) + ($b * 9) + ($c * 8) + ($d * 7) + ($e * 6) + ($f * 5) + ($g * 4) + ($h * 3) + ($i * 2) + ($j *1); 
+	$result = ($isbn_sum / 11);
+	echo "$result<br>";
+	if (is_int ($result)){
+		echo "This is a valid ISBN.";
+	}
+		else {
+			echo "This is not a valid ISBN.";
+		}
+	}
+	
+	
+	const X = 10;//not sure if this is right but it seems to work
+	echo isbn(1, 5, 6, 8, 8, 1, 1, 1, 1, X). "<br>";//easier way to input?
+
+?> 
+
+<a href = "http://www.isbnsearch.org/">Check validity of ISBN numbers here</a>
+</p>
+
+<h3>Coin Excercise</h3>
+
+<?php
+
+echo "Flipping a coin once...<br><br>";
+for($i=0;$i<1;++$i){
+  $flip= mt_rand(0,1);
+  if ($flip == 0){
+	echo "<img src =\"http://clipart-library.com/img1/985324.jpg\" width= \"50px\" height = \"50px\"> ";
+	}else{
+	echo "<img src =\"http://clipart-library.com/img1/985331.jpg\" width= \"50px\" height = \"50px\"> ";
+    }
+}
+
+echo "<br><br>Flipping a coin three times...<br><br>";
+
+for($i=0;$i<3;++$i){
+$threeflip =mt_rand(0,1);
+	if ($threeflip == 0){
+		echo "<img src =\"http://clipart-library.com/img1/985324.jpg\" width= \"50px\" height = \"50px\"> ";
+		}else{
+		echo "<img src =\"http://clipart-library.com/img1/985331.jpg\" width= \"50px\" height = \"50px\"> ";}
+}
+
+echo "<br><br>Flipping a coin five times...<br><br>";
+
+for($i=0;$i<5;++$i){
+$fiveflip = mt_rand(0,1);
+	if ($fiveflip == 0){
+		echo "<img src =\"http://clipart-library.com/img1/985324.jpg\" width= \"50px\" height = \"50px\"> ";
+		}else{
+		echo "<img src =\"http://clipart-library.com/img1/985331.jpg\" width= \"50px\" height = \"50px\"> ";}
+ }
+
+echo "<br><br>Flipping a coin seven times...<br><br>";
+
+for($i=0;$i<7;++$i){
+ $sevenflip =mt_rand(0,1);
+	if ($sevenflip == 0){
+		echo "<img src =\"http://clipart-library.com/img1/985324.jpg\" width= \"50px\" height = \"50px\"> ";
+		}else{
+		echo "<img src =\"http://clipart-library.com/img1/985331.jpg\" width= \"50px\" height = \"50px\"> ";}
+}
+
+echo "<br><br>Flipping a coin nine times...<br><br>";
+
+for($i=0;$i<9;++$i){
+ $nineflip= mt_rand(0,1);
+	if ($nineflip == 0){
+	  echo "<img src =\"http://clipart-library.com/img1/985324.jpg\" width= \"50px\" height = \"50px\"> ";
+	  }else{
+		  echo "<img src =\"http://clipart-library.com/img1/985331.jpg\" width= \"50px\" height = \"50px\"> ";}
+}
+?>
+
+<h3>Number of flips to get two heads</h3>
+
+<?php
+
+
+echo "Let the coin flipping begin!<br>";
+echo "<br>";
+$heads= 0;
+$count= 0;
+
+  while ($heads<2){
+  $flip = mt_rand(0,1);
+  $count++;
+      if ($flip ==1){
+             $heads++; //increments heads variable
+             echo "<img src =\"http://clipart-library.com/img1/985324.jpg\" width= \"50px\" height = \"50px\"> "; //show that head was flipped
+            }
+	else{
+			$heads=0; //sets heads variable back to 0
+             echo "<img src =\"http://clipart-library.com/img1/985331.jpg\" width= \"50px\" height = \"50px\"> "; //show tails was flipped
+            }
+
+   }
+	echo "<br><br>Flipped two heads in a row in  " . " " .$count . " flips!";
+
+?>
+ 
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
