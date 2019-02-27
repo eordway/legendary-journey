@@ -30,7 +30,11 @@ table {
 
 border: 1px solid black;
 border-collapse: collapse;
-width: 100%;
+width: 600px;
+table-layout: auto;
+margin-left: auto;
+margin-right: auto;
+display: block;
 
 }
 
@@ -129,7 +133,7 @@ echo "<img src = \"tails.jpg\" class=\"coin\" alt=\"tails\"> "; //show tails was
 }
 echo "<p><br><br>Flipped" ." ".$desired. " " ."heads in a row in  " . " " .$count . " flips!<br><br></p>";
 }
-coinToss (8);
+coinToss (9);
 
 ?>
 
